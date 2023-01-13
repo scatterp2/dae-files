@@ -2,9 +2,9 @@ import bpy
 import os
 
 with open('/content/temp.txt') as f:
-    darray = ["/content/dae-files/" + item + ".dae" for item in f.read().splitlines()]
+    darray = ["/content/" + item + ".dae" for item in f.read().splitlines()]
 with open('/content/temp.txt') as f:
-    parray = ["/content/dae-files/" + item + ".png" for item in f.read().splitlines()]
+    parray = ["/content/" + item + ".png" for item in f.read().splitlines()]
 
 # create an empty list to store the imported objects
 imported_objects = []
